@@ -1,0 +1,31 @@
+{% include "layout.html"%} 
+{%block title%}<title>Login</title>{%endblock%}
+
+{%for errors in messages%}
+<div class="messages">{{errors}}</div>
+{%endfor%}
+
+<div class="background">
+  <div class="shape"></div>
+  <div class="shape"></div>
+</div>
+<form method="POST" action="/auth/login">
+  <h3>Login Here</h3>
+
+  <label for="username">Username</label>
+  <input name="email" type="text" placeholder="Email or Phone" id="username" />
+
+  <label for="password">Password</label>
+  <input name="password" type="password" placeholder="Password" id="password" />
+
+  <button type="submit">Log In</button>
+  <div class="social">
+    <div class="go"><i class="fab fa-google"></i> Google</div>
+    <div class="fb"><i class="fab fa-facebook"></i> Facebook</div>
+  </div>
+  <div class="social">
+    <div class="go">
+      <a href="{{url_for('add_user')}}">Don't have an account? register here</a>
+    </div>
+  </div>
+</form>

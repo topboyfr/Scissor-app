@@ -1,0 +1,23 @@
+{% include "layout.html"%} 
+{%block title%}<title>Dashboard</title>{%endblock%}
+<div>
+    {%for x in links%}
+    <div>
+        <div>
+            <h3>
+            title : {{x.title}}
+            </h3>
+        </div>
+        <div>target url : {{x.target_link}}</div>
+        <div>short url</div>
+        <div>url key : {{x.key}}</div>
+        <div>number of visits : {{x.visits}}</div>
+        <div>date created : {{x.date_created}}</div>
+    </div>
+    <div>
+        <button>customize url</button>
+        <button>show qr code</button>
+        <button>delete</button>
+    </div>
+    {%endfor%}
+</div>

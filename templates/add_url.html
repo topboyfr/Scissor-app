@@ -1,0 +1,27 @@
+{% include "layout.html"%} 
+{%block title%}<title>Create URL</title>{%endblock%}
+
+{%for errors in messages%}
+<div class="messages">{{errors}}</div>
+{%endfor%}
+
+<div class="background">
+  <div class="shape"></div>
+  <div class="shape"></div>
+</div>
+<form method="POST"></form>
+  <h3>paste url here</h3>
+
+  <label>Long URL</label>
+  <input name="target_url" type="text" placeholder="https://www.example.com/longurl" id="username" />
+
+  <label>Title</label>
+  <input name="title" type="text" placeholder="new_url" value="my_url"  id="password" />
+
+  <button type="submit">Create</button>
+  <div class="social">
+    <div class="go">
+      <a href="{{url_for('dashboard')}}">go back</a>
+    </div>
+  </div>
+</form>

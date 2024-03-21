@@ -1,0 +1,397 @@
+{% include "layout.html"%} {%block title%}<title>Home</title>{%endblock%}
+{%include "navbar.html"%}
+
+<section class="hero-section">
+    <h1 class="hero-header">
+        Optimize Your Online Experience with Our Advanced
+        <span class="text-style">URL Shortening</span> Solution<img
+            class="under-hero-header"
+            src="{{url_for('static', path='./Assets/SVGs/Vector 3.svg')}}"
+            alt=""
+        />
+    </h1>
+
+    <p class="hero-subheader">
+        Personalize your shortened URLs to align with your brand identity.
+        Utilize custom slugs, branded links, and domain customization options to
+        reinforce your brand presence and enhance user engagement.
+    </p>
+    <div class="cta">
+        <button class="btn">Sign up</button>
+        <button class="btn">Learn more</button>
+    </div>
+    <!-- <div class="frame">
+                    <img class="group1" src="./Assets/Images/Group 2.png" alt="">
+                </div> -->
+    <div class="frame">
+        <img
+            class="frame-image"
+            src="{{url_for('static', path='./Assets/SVGs/Frame 1000001716.svg')}}"
+            alt=""
+        />
+        <p class="frame-text">
+            Seamlessly transform your long URLs into
+            <span style="font-weight: 600">concise</span> and
+            <span style="font-weight: 600">shareable links</span> with just few
+            clicks.
+        </p>
+        <img class="frame-back" src="{{url_for('static', path='./Assets/SVGs/Vector 2.svg')}}" alt="" />
+    </div>
+</section>
+
+<img class="group2" src="{{url_for('static', path='./Assets/SVGs/Group 3.svg')}}" alt="" />
+<section class="section2">
+    <div>
+        <h1 class="section2-header">One Stop.</h1>
+        <h1 class="section2-header">
+            Four <span class="text-style">Possibilities.</span>
+        </h1>
+    </div>
+    <div class="items">
+        <div class="item">
+            <h1 class="text-bold">3M</h1>
+            <p class="text-light">Active users</p>
+        </div>
+        <div class="item">
+            <h1 class="text-bold">60M</h1>
+            <p class="text-light">Links & QR codes created</p>
+        </div>
+        <div class="item">
+            <h1 class="text-bold">1B</h1>
+            <p class="text-light">Clicked & Scanned connections</p>
+        </div>
+        <div class="item">
+            <h1 class="text-bold">300K</h1>
+            <p class="text-light">App Integrations</p>
+        </div>
+    </div>
+</section>
+
+<section id="section3">
+    <div class="headers">
+        <img src="{{url_for('static', path='./Assets/SVGs/line-70.svg')}}" alt="" />
+        <div class="text-section">
+            <h1 class="section3-header">
+                Why choose <span class="text-style">Scissors</span>
+            </h1>
+            <p class="section3-subheader">
+                Scissors is the hub of everything that has to do with your link
+                management. We shorten your URLs, allow you creating custom ones
+                for your personal, business, event usage. Our swift QR code
+                creation, management and usage tracking with advance analytics
+                for all of these is second to none.
+            </p>
+        </div>
+    </div>
+    <div class="all-items">
+        <div class="section3-items">
+            <div class="section3-item">
+                <div class="eclipse-container">
+                    <img src="{{url_for('static', path='./Assets/SVGs/link-2.svg')}}" alt="" />
+                    <img
+                        class="eclipse"
+                        src="{{url_for('static', path='./Assets/SVGs/Group 6 (2).svg')}}"
+                        alt=""
+                    />
+                </div>
+                <h1 class="item-header">URL Shortening</h1>
+                <p class="item-subheader">
+                    Scissor allows you to shorten URLs of your business, events.
+                    Shorten your URL at scale, URL redirects.
+                </p>
+            </div>
+            <div class="section3-item">
+                <div class="eclipse-container">
+                    <img src="{{url_for('static', path='./Assets/SVGs/edit.svg')}}" alt="" />
+                    <img
+                        class="eclipse"
+                        src="{{url_for('static', path='./Assets/SVGs/Frame 1000001695 (1).svg')}}"
+                        alt=""
+                    />
+                </div>
+                <h1 class="item-header">Custom URLs</h1>
+                <p class="item-subheader">
+                    With Scissor, you can create custom URLs, with the length
+                    you want! A solution for socials and businesses.
+                </p>
+            </div>
+        </div>
+        <div class="section3-items">
+            <div class="section3-item">
+                <div class="eclipse-container">
+                    <img src="{{url_for('static', path='./Assets/SVGs/grid.svg')}}" alt="" />
+                    <img
+                        class="eclipse"
+                        src="{{url_for('static', path='./Assets/SVGs/Frame 1000001695.svg')}}"
+                        alt=""
+                    />
+                </div>
+                <h1 class="item-header">QR Codes</h1>
+                <p class="item-subheader">
+                    Generate QR codes to your business, events. Bring your
+                    audience and customers to your doorstep with this scan and
+                    go solution.
+                </p>
+            </div>
+            <div class="section3-item">
+                <div class="eclipse-container">
+                    <img src="{{url_for('static', path='./Assets/SVGs/activity.svg')}}" alt="" />
+                    <img
+                        class="eclipse"
+                        src="{{url_for('static', path='./Assets/SVGs/Frame 1000001718.svg')}}"
+                        alt=""
+                    />
+                </div>
+                <h1 class="item-header">Data Analytics</h1>
+                <p class="item-subheader">
+                    Receive data on the usage of either your shortened URL,
+                    custom URLs or generated QR codes. Embedded to monitor
+                    progress.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section4">
+    <div class="header">
+        <img src="{{url_for('static', path='./Assets/SVGs/line-70.svg')}}" alt="" />
+        <div class="text-section">
+            <h1 class="section4-header">
+                A <span class="text-style">price perfect</span> for your needs.
+            </h1>
+            <p class="section4-subheader">
+                From catering for your personal, business, event, socials needs,
+                you can be rest assured we have you in mind in our pricing.
+            </p>
+        </div>
+    </div>
+    <div class="pricing-options">
+        <div class="pricing-option">
+            <p class="txt-medium">Basic</p>
+            <h1 class="txt-bold">Free</h1>
+            <p class="txt-medium">Free plans for all users</p>
+            <ul class="options">
+                <li class="option">
+                    <img src="{{url_for('static', path='./Assets/SVGs/check-circle.svg')}}" alt="" />
+                    <p class="option-title">Unlimited URL Shortening</p>
+                </li>
+                <li class="option">
+                    <img src="{{url_for('static', path='./Assets/SVGs/check-circle.svg')}}" alt="" />
+                    <p class="option-title">Basic Link Analytics</p>
+                </li>
+                <li class="option">
+                    <img src="{{url_for('static', path='./Assets/SVGs/check-circle.svg')}}" alt="" />
+                    <p class="option-title">Customizable Short Links</p>
+                </li>
+                <li class="option">
+                    <img src="{{url_for('static', path='./Assets/SVGs/check-circle.svg')}}" alt="" />
+                    <p class="option-title">Standard Support</p>
+                </li>
+                <li class="option">
+                    <img src="{{url_for('static', path='./Assets/SVGs/check-circle.svg')}}" alt="" />
+                    <p class="option-title">Ad-supported</p>
+                </li>
+            </ul>
+        </div>
+        <div class="pricing-option">
+            <p class="txt-medium">Professional</p>
+            <h1 class="txt-bold">$15/month</h1>
+            <p class="txt-medium">Ideal for business creators</p>
+            <ul class="options">
+                <li class="option">
+                    <img src="{{url_for('static', path='./Assets/SVGs/check-circle.svg')}}" alt="" />
+                    <p class="option-title">Enhanced Link Analytics</p>
+                </li>
+                <li class="option">
+                    <img src="{{url_for('static', path='./Assets/SVGs/check-circle.svg')}}" alt="" />
+                    <p class="option-title">Custom Branded Domains</p>
+                </li>
+                <li class="option">
+                    <img src="{{url_for('static', path='./Assets/SVGs/check-circle.svg')}}" alt="" />
+                    <p class="option-title">Advanced Link Customization</p>
+                </li>
+                <li class="option">
+                    <img src="{{url_for('static', path='./Assets/SVGs/check-circle.svg')}}" alt="" />
+                    <p class="option-title">Priority Support</p>
+                </li>
+                <li class="option">
+                    <img src="{{url_for('static', path='./Assets/SVGs/check-circle.svg')}}" alt="" />
+                    <p class="option-title">Ad-free Experience</p>
+                </li>
+            </ul>
+        </div>
+        <div class="pricing-option">
+            <p class="txt-medium">Teams</p>
+            <h1 class="txt-bold">$25/month</h1>
+            <p class="txt-medium">Share with up to 10 users</p>
+            <ul class="options">
+                <li class="option">
+                    <img src="{{url_for('static', path='./Assets/SVGs/check-circle.svg')}}" alt="" />
+                    <p class="option-title">Team Collaboration</p>
+                </li>
+                <li class="option">
+                    <img src="{{url_for('static', path='./Assets/SVGs/check-circle.svg')}}" alt="" />
+                    <p class="option-title">User Roles and Permissions</p>
+                </li>
+                <li class="option">
+                    <img src="{{url_for('static', path='./Assets/SVGs/check-circle.svg')}}" alt="" />
+                    <p class="option-title">Enhanced Security</p>
+                </li>
+                <li class="option">
+                    <img src="{{url_for('static', path='./Assets/SVGs/check-circle.svg')}}" alt="" />
+                    <p class="option-title">API Access</p>
+                </li>
+                <li class="option">
+                    <img src="{{url_for('static', path='./Assets/SVGs/check-circle.svg')}}" alt="" />
+                    <p class="option-title">Dedicated Account Manager</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="cta">
+        <button class="button btn1">Get custom pricing</button>
+        <button class="button btn2">Select pricing</button>
+    </div>
+</section>
+
+<section class="section5">
+    <div class="card">
+        <div class="input-container">
+            <input type="text" placeholder="Paste URL here..." />
+            <div class="card-row">
+                <div>
+                    <p>Choose Domain</p>
+                    <img src="{{url_for('static', path='./Assets/SVGs/Vector8.svg')}}" alt="" />
+                </div>
+                <input type="text" placeholder="Type alias here" />
+            </div>
+        </div>
+        <button class="button">
+            Trim URL <img src="{{url_for('static', path='./Assets/SVGs/magic-wand.svg')}}" alt="" />
+        </button>
+        <p class="card-bottom">
+            By clicking TrimURL, I agree to the Terms of Service, Privacy Policy
+            and Use of Cookies.
+        </p>
+    </div>
+    <img class="img img1" src="{{url_for('static', path='./Assets/SVGs/vector4.svg')}}" alt="" /><img
+        class="img img4"
+        src="{{url_for('static', path='./Assets/SVGs/vector5.svg')}}"
+        alt=""
+    /><img class="img img3" src="{{url_for('static', path='./Assets/SVGs/vector6.svg')}}" alt="" /><img
+        class="img img2"
+        src="{{url_for('static', path='./Assets/SVGs/vector9.svg')}}"
+        alt=""
+    />
+</section>
+
+
+
+<section class="section7">
+    <div class="content">
+        <h1 class="section7-header">Revolutionizing Link Optimization</h1>
+        <button class="button">Get Started</button>
+    </div>
+    <img src="{{url_for('static', path='./Assets/SVGs/7.svg')}}" alt="" class="img img-left" /><img
+        src="{{url_for('static', path='./Assets/SVGs/8.svg')}}"
+        alt=""
+        class="img img-left"
+    /><img src="{{url_for('static', path='./Assets/SVGs/9.svg')}}" alt="" class="img img-left" />
+    <img src="{{url_for('static', path='./Assets/SVGs/10.svg')}}" alt="" class="img img-right" /><img
+        src="{{url_for('static', path='./Assets/SVGs/11.svg')}}"
+        alt=""
+        class="img img-right"
+    /><img src="{{url_for('static', path='./Assets/SVGs/12.svg')}}" alt="" class="img img-right" />
+</section>
+
+<footer class="footer-container">
+    <div class="content">
+        <div class="footer-left">
+            <div class="footer-left-top">
+                <img src="{{url_for('static', path='./Assets/SVGs/Vector (1).svg')}}" alt="" />
+                <img src="{{url_for('static', path='./Assets/SVGs/line.svg')}}" alt="" />
+                <h1 class="footer-header">SCISSOR</h1>
+            </div>
+            <div class="footer-left-bottom">
+                <img src="{{url_for('static', path='./Assets/SVGs/i-fi-social-twitter.svg')}}" alt="" /><img
+                    src="{{url_for('static', path='./Assets/SVGs/svg-feather.svg')}}"
+                    alt=""
+                /><img
+                    src="{{url_for('static', path='./Assets/SVGs/i.fi-social-linkedin.svg')}}"
+                    alt=""
+                /><img src="{{url_for('static', path='./Assets/SVGs/i.fi-social-facebook.svg')}}" alt="" />
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="footer-right-items">
+                <div class="footer-right-content">
+                    <h3 class="footer-subheader">Why Scissor?</h3>
+                    <p class="footer-options">Scissor 101</p>
+                    <p class="footer-options">Integrations & API</p>
+                    <p class="footer-options">Pricing</p>
+                </div>
+                <div class="footer-right-content">
+                    <h3 class="footer-subheader">Solutions</h3>
+                    <p class="footer-options">Social Media</p>
+                    <p class="footer-options">Digital Marketing</p>
+                    <p class="footer-options">Customer Service</p>
+                    <p class="footer-options">For Developers</p>
+                </div>
+                <div class="footer-right-content">
+                    <h3 class="footer-subheader">Products</h3>
+                    <p class="footer-options">Link Management</p>
+                    <p class="footer-options">QR Codes</p>
+                    <p class="footer-options">Link-in-bio</p>
+                </div>
+
+                <div class="footer-right-content">
+                    <h3 class="footer-subheader">Company</h3>
+                    <p class="footer-options">About Scissor</p>
+                    <p class="footer-options">Careers</p>
+                    <p class="footer-options">Partners</p>
+                    <p class="footer-options">Press</p>
+                    <p class="footer-options">Contact</p>
+                    <p class="footer-options">Reviews</p>
+                </div>
+            </div>
+            <div class="footer-right-items">
+                <div class="footer-right-content">
+                    <h3 class="footer-subheader">Resources</h3>
+                    <p class="footer-options">Blog</p>
+                    <p class="footer-options">Resource Library</p>
+                    <p class="footer-options">Developers</p>
+                    <p class="footer-options">App Connectors</p>
+                    <p class="footer-options">Support</p>
+                    <p class="footer-options">Trust Center</p>
+                    <p class="footer-options">Browser Extension</p>
+                    <p class="footer-options">Mobile App</p>
+                </div>
+
+                <div class="footer-right-content">
+                    <h3 class="footer-subheader">Features</h3>
+                    <p class="footer-options">Branded Links</p>
+                    <p class="footer-options">Mobile Links</p>
+                    <p class="footer-options">Campaign</p>
+                    <p class="footer-options">Management & Analytics</p>
+                    <p class="footer-options">QR Code generation</p>
+                </div>
+
+                <div class="footer-right-content">
+                    <h3 class="footer-subheader">Legal</h3>
+                    <p class="footer-options">Privacy Policy</p>
+                    <p class="footer-options">Cookie Policy</p>
+                    <p class="footer-options">Terms of Service</p>
+                    <p class="footer-options">Acceptable Use Policy</p>
+                    <p class="footer-options">Code of Conduct</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="{{url_for('static', path='./Assets/SVGs/13.svg')}}" alt="" class="img footer-img-left" />
+    <img src="{{url_for('static', path='./Assets/SVGs/14.svg')}}" alt="" class="img footer-img-left" />
+    <img src="{{url_for('static', path='./Assets/SVGs/19.svg')}}" alt="" class="img footer-img-left" />
+    <img src="{{url_for('static', path='./Assets/SVGs/16.svg')}}" alt="" class="img img-right" />
+    <img src="{{url_for('static', path='./Assets/SVGs/17.')}}'" alt="" class="img img-right" />
+    <img src="{{url_for('static', path='./Assets/SVGs/18.svg')}}" alt="" class="img img-right" />
+</footer>

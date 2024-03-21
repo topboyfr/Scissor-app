@@ -1,0 +1,32 @@
+<nav class="navbar">
+    <div class="logo">
+        <img src="{{url_for('static', path='/Assets/SVGs/Vector.svg')}}" alt="logo" class="logo-image" />
+        <div class="stroke"></div>
+        <h2 class="logo-title">SCISSOR</h2>
+    </div>
+    <ul class="nav-items">
+        <li>
+            <a class="nav-item" href="#"
+                ><span style="color: rgb(37, 194, 246)">My URLs</span></a
+            >
+        </li>
+        <li>
+            <a class="nav-item" href="#section3"
+                >Features<img src="{{url_for('static', path='./Assets/SVGs/chevron-down.svg')}}" alt="expand"
+            /></a>
+        </li>
+        <li><a class="nav-item" href="{{url_for('add_user')}}">Pricing</a></li>
+        <li><a class="nav-item" href="#">Analytics</a></li>
+        <li><a class="nav-item" href="{{url_for('FAQs')}}">FAQs`</a></li>
+    </ul>
+    <div class="cta">
+        <button class="btn" onclick="window.location.href='auth/login'">Log in</button>
+        <button class="btn" onclick="window.location.href='users/create_user'" type="button">Try for free</button>
+    </div>
+    <div class="menu">
+        <img
+            src="{{url_for('static', path='./Assets/SVGs/menu_FILL0_wght400_GRAD0_opsz48.svg')}}"
+            alt="menu"
+        />
+    </div>
+</nav>

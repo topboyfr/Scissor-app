@@ -1,0 +1,37 @@
+{% include "layout.html"%} 
+{%block title%}<title>Sign up</title>{%endblock%}
+
+<div class="background">
+  <div class="shape"></div>
+  <div class="shape"></div>
+</div>
+
+{%for errors in messages%}
+<div class="messages">{{errors}}</div>
+{%endfor%}
+
+<form method="POST", action="{{url_for('add_user')}}" >
+  <h3>Register Here</h3>
+
+  <label>First name</label>
+  <input type="text" name="first_name" placeholder="first name" id="username" />
+
+  <label>Last name</label>
+  <input type="text" name="last_name" placeholder="last name" id="username" />
+
+  <label >Email</label>
+  <input type="Email" name="email" placeholder="Email" id="Email" />
+
+  <label>Password</label>
+  <input type="password"  name="password" placeholder="******" id="password" />
+
+  <label>Re-type Password</label>
+  <input type="password" name="password2" placeholder="******" id="password" />
+
+  <button>Register</button>
+</form>
+<div class="social">
+  <div class="go">
+    <a href="#">already have an account? log in here</a>
+  </div>
+</div>
