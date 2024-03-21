@@ -21,7 +21,7 @@
   
   :root {
     --primaryColor: #0065fe;
-    --textColorDark: #141414;
+    --textColorDark: #ffffff;
     --textColorLight: #ffffff;
     --textRegular: "gilroy-regular";
     --textBold: "gilroy-bold";
@@ -44,7 +44,7 @@
   }
   
   body {
-    background: linear-gradient(to right, #322a29 33%, #26241c 66%, #f7f8eb 100%);
+    background: linear-gradient(to right, #e5dddc 33%, #d3d0c5 66%, #f7f8eb 100%);
   }
   
   button {
