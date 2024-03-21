@@ -87,3 +87,21 @@ async def create_url_post(
     db.commit() 
     return RedirectResponse("/users/dashboard", status_code=status.HTTP_302_FOUND)
 
+@link_router.get("/customize/{url_key}", response_class=HTMLResponse)
+@rate_limited(max_calls=3, time_frame=60)
+async def customise(
+    request: Request, 
+    url_key:str, 
+    db:Session=Depends(database.get_db)
+):
+    messages = []
+    
+    # authentication
+    user = auth_service.auth_user(request, db)
+    if not user:
+        messages.append("session expired, kindly Login")
+        return templates.TemplateResponse("login.html", {'request':Request, 'messages': messages})
+    
+    url_key = db.query(model.Link).filter(model.Link.target_link == url_key).first()
+    
+    return templates.TemplateResponse("Customize.html", {"request": request, "user": user, 'url_key': url_key, "messages": messages})
